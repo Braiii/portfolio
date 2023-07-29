@@ -206,7 +206,7 @@
             <div class="justify-between flex flex-col-reverse md:flex-row md:space-x-10">
                 <div class="space-y-8 mt-10 flex-1 md:mt-0">
                     <h1 class="text-5xl lg:mt-10 font-medium capitalize">
-                        <!-- about bulb icon -->
+                        <!-- bulb icon -->
                         <svg class="animate-pulse relative lg:top-0 top-16 left-60" width="78" height="100" viewBox="0 0 78 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.7178 66.8361C23.5808 60.7015 23.8898 58.5877 24.8986 51.1184C25.4542 47.0053 26.2929 43.0649 26.3219 38.8814C26.3736 31.4003 28.2842 21.8133 35.4159 17.6654C49.449 9.50364 65.9403 30.753 55.9584 43.1769C52.1594 47.9054 46.9947 50.7841 42.6846 55.052C40.956 56.7636 39.7069 58.7842 37.6561 60.2683C35.6894 61.6916 33.2456 63.4641 32.6489 65.7196C32.1449 67.6249 32.0595 70.2455 30.2665 71.5733C27.7896 73.4077 28.7678 72.3861 26.012 71.6571C24.1176 71.156 21.7223 68.9113 20.5179 67.2849C19.6579 66.1238 18.4053 68.4929 19.0483 66.0622C19.6002 63.9758 19.8127 65.8892 18.4396 65.5259" stroke="#166534" stroke-width="1.66333" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M24.7234 75.8196C21.2684 73.7091 11.5468 68.4653 13.1324 72.1905C15.0456 76.685 16.7797 75.1449 20.1281 76.8765C21.8404 77.7621 22.1288 83.8463 20.0827 83.4319C17.1605 82.84 16.2765 78.4638 13.3459 77.6885C10.6786 76.9829 9.94104 80.5438 11.2114 82.211C12.889 84.4125 15.7849 83.2891 16.5296 86.2239C17.7063 90.8616 11.7443 88.5805 10.254 87.1699C8.75263 85.7487 7.47868 83.8128 6.41486 82.61" stroke="#166534" stroke-width="1.66333" stroke-linecap="round" stroke-linejoin="round"/>
@@ -585,41 +585,42 @@
                         <path d="M100.373 29.228C101.827 32.0658 102.013 33.1223 104.97 34.1154C105.768 34.3835 106.965 33.8252 107.57 34.0357C108.766 34.4523 111.304 34.2575 112.425 33.2348C114.678 31.1782 115.597 29.8942 118.75 28.4989C120.739 27.6187 122.532 25.7765 123.638 24.2804C124.854 22.6359 126.763 21.3164 128.033 19.6617C128.573 18.9571 125.427 17.5099 125.594 16.3532C125.641 16.0253 121.558 16.3462 120.925 16.1259C120.158 15.8589 119.861 15.4191 119.584 14.7565C119.18 13.7888 117.942 15.1313 116.374 15.3531" stroke="#2A7347" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M25.8341 72.7563C30.2352 73.7884 33.973 75.2761 37.8088 76.9469C41.1391 78.3975 45.0803 78.9949 48.3967 80.3937C50.7577 81.3896 52.9521 83.9219 54.5381 85.5733C55.0666 86.1236 55.4419 86.6481 55.7738 87.2896C56.5353 88.7615 56.1086 85.0888 56.0702 84.6855" stroke="#2A7347" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M75.4796 40.8633C76.5826 41.8376 80.7781 47.3699 80.514 42.9776" stroke="#2A7347" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                        
-                    <div class="flex max-md:flex-col max-md:space-y-4 md:space-x-4">
-                        <div>
-                            <label for="name" class="block font-semibold mb-1">Your name</label>
-                            <input 
-                                type="text" 
-                                name="name" 
-                                class="p-3 px-4 rounded-2xl w-full bg-green-800 bg-opacity-20 
-                                    placeholder:text-gray-500 placeholder:font-semibold placeholder:text-sm" 
-                                placeholder="Name"
-                            >
+                    </svg>     
+
+                    <form action="mailto:delacruzbrainard15@gmail.com" method="POST" enctype="text/plain">
+                        <div class="flex max-md:flex-col max-md:space-y-4 md:space-x-4">
+                            <div>
+                                <label for="name" class="block font-semibold mb-1">Your name</label>
+                                <input 
+                                    type="text" 
+                                    name="name" 
+                                    class="p-3 px-4 rounded-2xl w-full bg-green-800 bg-opacity-20 
+                                        placeholder:text-gray-500 placeholder:font-semibold placeholder:text-sm" 
+                                    placeholder="Name"
+                                >
+                            </div>
+                            <div>
+                                <label for="email" class="block font-semibold mb-1">Your email</label>
+                                <input 
+                                    type="text" 
+                                    name="email" 
+                                    class="p-3 px-4 rounded-2xl w-full bg-green-800 bg-opacity-20 
+                                        placeholder:text-gray-500 placeholder:font-semibold placeholder:text-sm" 
+                                    placeholder="Email"
+                                >
+                            </div>
                         </div>
-                        <div>
-                            <label for="email" class="block font-semibold mb-1">Your email</label>
-                            <input 
-                                type="text" 
-                                name="email" 
-                                class="p-3 px-4 rounded-2xl w-full bg-green-800 bg-opacity-20 
-                                    placeholder:text-gray-500 placeholder:font-semibold placeholder:text-sm" 
-                                placeholder="Email"
-                            >
+                        <div class="mt-8">
+                            <label for="message" class="block font-semibold mb-1">Your message</label>
+                            <textarea 
+                                name="message" 
+                                rows="10"
+                                class="p-3 px-4 rounded-2xl bg-green-800 bg-opacity-20 placeholder:text-gray-500 
+                                    placeholder:font-semibold placeholder:text-sm w-full" 
+                                placeholder="Message"
+                            ></textarea>
                         </div>
-                    </div>
-                    <div class="mt-8">
-                        <label for="message" class="block font-semibold mb-1">Your message</label>
-                        <textarea 
-                            name="message" 
-                            rows="10"
-                            class="p-3 px-4 rounded-2xl bg-green-800 bg-opacity-20 placeholder:text-gray-500 
-                                placeholder:font-semibold placeholder:text-sm w-full" 
-                            placeholder="Message"
-                        ></textarea>
-                    </div>
-                    <button class="mt-8">                            
-                        <a href="mailto:delacruzbrainard15@gmail.com?subject=Brai Portfolio Mail&body=" class="bg-green-800 text-white py-2.5 px-8 rounded-3xl font-bold hover:cursor-pointer"  style="text-shadow: 1px 3px 2px black;">
+                        <button type="submit" class="bg-green-800 mt-8 text-white py-2 px-8 rounded-3xl font-bold" style="text-shadow: 1px 3px 2px black;">                            
                             Send Mail
                             <svg class="inline relative top-0.5 left-1" width="24" height="24" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_d_18_33)">
@@ -639,8 +640,8 @@
                                 </filter>
                                 </defs>
                             </svg>
-                        </a>
-                    </button> 
+                        </button>  
+                    </form>  
 
                     <!-- mail icon -->
                     <svg class="absolute right-32" width="75" height="72" viewBox="0 0 75 72" fill="none" xmlns="http://www.w3.org/2000/svg">
