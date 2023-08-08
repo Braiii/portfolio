@@ -47,3 +47,23 @@
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
+#panel1 #links {
+    transition: width 0.5s;
+    width: 0%;
+}
+
+#panel1:hover #links {
+    width: 100%;
+}
+
+#panel1 #links span,
+#panel1 #links a {
+    opacity: 0;
+}
+
+#panel1:hover #links span,
+#panel1:hover #links a {
+    transition: opacity 1s;
+    opacity: 1;
+}
